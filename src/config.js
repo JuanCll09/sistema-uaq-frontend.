@@ -1,5 +1,8 @@
-// --- ¡FASE 5: CONEXIÓN FINAL! ---
-    // Esta es la IP pública de tu servidor de AWS
-    const API_BASE_URL = 'http://18.221.215.255/proyecto_uaq'; 
-
-    export default API_BASE_URL;
+fetch('http://18.221.215.255/proyecto_uaq/api_login.php', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ email: 'admin@uaq.mx', password: '123' })
+})
+.then(r => r.json())
+.then(data => console.log('Resultado del Login:', data))
+.catch(error => console.error('Error:', error));
