@@ -1,5 +1,5 @@
-// Cuando estemos en tu compu, usará localhost.
-// Cuando lo subamos a Vercel/AWS, solo cambiaremos esta línea.
-const API_BASE_URL = 'http://localhost/proyecto_uaq'; 
+// --- ¡FASE 5: CONEXIÓN FINAL! ---
+    // Esta es la IP pública de tu servidor de AWS
+    const API_BASE_URL = 'http://18.221.215.255/proyecto_uaq'; 
 
-export default API_BASE_URL;
+    export default API_BASE_URL;
